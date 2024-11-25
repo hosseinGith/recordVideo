@@ -39,7 +39,13 @@
 
     <script src="//unpkg.com/videojs-record/dist/videojs.record.min.js"></script>
 
-    <script src="browser-workarounds.js"></script>
+    <link
+      rel="stylesheet"
+      href="//unpkg.com/videojs-record/dist/css/videojs.record.min.css"
+    />
+
+    <!-- load script -->
+    <script src="//unpkg.com/videojs-record/dist/videojs.record.min.js"></script>
 
     <style>
       /* change player background color */
@@ -985,7 +991,7 @@
       };
 
       // apply some workarounds for certain browsers
-      applyVideoWorkaround();
+      // applyVideoWorkaround();
 
       var player = videojs("myVideo", options, function () {
         // print version information at startup
